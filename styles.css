@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(2, 106, 189, 1) 40%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  background-color: #333;
+  overflow: hidden;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 16px;
+  border: 8px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.card:hover .info {
+  bottom: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* make igm not stretched  */
+}
+
+.card .info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  border-radius: 15px;
+  background: rgba(2, 105, 189, 0.452);
+  backdrop-filter: blur(5px); /*blur effect background*/
+  color: #fff;
+  padding: 30px;
+  transition: 0.4s ease-in-out;
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0; /* Initially hidden 
+  transition: opacity 0.3s ease-in-out;
+  transform: translateY(100%); */
+}
+
+.card h2 {
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.card p {
+  text-transform: capitalize;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 40px 0;
+  font-weight: 400;
+  font-weight: 200;
+}
+
+/* Hover Effect */
+/* .card:hover .info {
+  transform: translateY(0);
+
+  opacity: 1; /* Makes the info fully visible on hover } */
